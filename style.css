@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.dashboard-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.header {
+    grid-column: span 3;
+    background-color: #006f6d;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.rating-details, .reviews-details, .sentiment-details, .requests-details, .phone-leads-details, .traffic-details {
+    text-align: center;
+}
+
+.sentiment-details {
+    width: 100%;
+    height: 200px;
+}
+
+canvas {
+    width: 100%;
+    height: 150px;
+}
+
+h3{
+    font-size: 16px;
+}
+
+p {
+    margin-top: 5px;
+    font-size: 16px;
+    color: #006F6D;
+}
